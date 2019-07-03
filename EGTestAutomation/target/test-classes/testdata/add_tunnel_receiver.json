@@ -1,0 +1,24 @@
+[{
+	"tunnel_receiver_name":"receiver1",
+	"tunnel_receiver_tcp_port":"8080",
+	"log_level":"INFO",
+	"log_rot_level":"At midnight each day",
+	"no_of_files_to_keep":"2",
+	"test_scenario":"Tunnel receiver with log level as INFO"
+},
+{
+	"tunnel_receiver_name":"receiver1",
+	"tunnel_receiver_tcp_port":"8080",
+	"log_level":"DEBUG",
+	"log_rot_level":"At the first day of the week",
+	"no_of_files_to_keep":"6",
+	"test_scenario":"Tunnel receiver with log level as DEBUG"
+},
+{
+	"tunnel_receiver_name":"receiver1",
+	"tunnel_receiver_tcp_port":"8080",
+	"log_level":"ERROR",
+	"log_rot_level":"At the beginning of each month",
+	"no_of_files_to_keep":"8",
+	"test_scenario":"Tunnel receiver with log level as ERROR"
+}]

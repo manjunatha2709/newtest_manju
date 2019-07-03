@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="BUILD VERIFICATION TEST" parallel="tests" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<!-- <test name="Tests on Windows 2012 R2">
+			<parameter name="os" value="windows2012r2x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.BuildVerificationTest" />
+			</classes> 
+		</test> -->
+		 <!--  <test name="Tests on Windows 2016 R2">
+			<parameter name="os" value="windows2016x64"></parameter>
+			<parameter name="type" value="win16"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.BuildVerificationTest" />
+			</classes> 
+		</test>  -->
+		<!-- <test name="Tests on RHEL 7.1 x64">
+			<parameter name="os" value="rhel65x64"></parameter>
+			<parameter name="type" value="ui"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.BuildVerificationTest" />
+			</classes>
+		</test>  -->
+		<test name="Tests on RHEL 7.5 x64">
+			<parameter name="os" value="rhel75x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.BuildVerificationTest" />
+			</classes>
+		</test>  
+		<!-- <test name="RHEL7.3x64">
+			<parameter name="os" value="rhel75x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.BuildVerificationTest" />
+			</classes>
+		</test> -->  
+		
+	</suite>
+</suites>

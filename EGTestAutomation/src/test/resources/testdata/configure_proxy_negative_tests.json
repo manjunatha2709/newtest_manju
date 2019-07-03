@@ -1,0 +1,36 @@
+[
+{
+	"expected_result":"false",
+	"proxy_host_ip":"10.141.19.12",
+	"proxy_host_port":"3128",
+	"proxy_username":"administrator",
+	"proxy_password":"1Password",	"test_scenario":"Negative scenario: configure proxy"
+},
+{
+	"expected_result":"false",
+	"proxy_host_ip":"",
+	"proxy_host_port":"3128",
+	"proxy_username":"",
+	"proxy_password":"",	"test_scenario":"Negative scenario: configure proxy"
+},
+{
+	"expected_result":"false",
+	"proxy_host_ip":"10.212.125.230",
+	"proxy_host_port":"",
+	"proxy_username":"administrator",
+	"proxy_password":"1Password",	"test_scenario":"Negative scenario: configure proxy"
+},
+{
+	"expected_result":"false",
+	"proxy_host_ip":"10.212.125.230",
+	"proxy_host_port":"412344",
+	"proxy_username":"administrator",
+	"proxy_password":"1Password",	"test_scenario":"Negative scenario: configure proxy"
+},
+{
+	"expected_result":"false",
+	"proxy_host_ip":"10.212.125.229",
+	"proxy_host_port":"3128",
+	"proxy_username":"administrator",
+	"proxy_password":"1Password1",	"test_scenario":"Negative scenario: configure proxy"
+}]

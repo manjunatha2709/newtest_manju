@@ -1,0 +1,10 @@
+[
+{
+	"expected_result_cv":"true",
+    "test_scenario": "Create Application Aware Validation Server with Default Configuration-",
+    "validation_server_name": "Def-",
+    "server_port": "4501",
+    "validation_server_shared_secret": "password1",
+    "confirm_rad_shared": "password1"
+ }
+ ]

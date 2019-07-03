@@ -1,0 +1,7 @@
+[
+{
+	"tunnel_forwarder_name":"forwarder1",
+ 	"tunnel_forwarder_udp_port":"1812",
+ 	"tunnel_forwarder_host":"10.212.127.218",
+ 	"tunnel_forwarder_port":"8080"
+}]

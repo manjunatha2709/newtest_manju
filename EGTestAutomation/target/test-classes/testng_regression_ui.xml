@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="REGRESSION TESTS - UI" parallel="tests" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<!--  <test name="User Interface Tests on Windows 2008 R2 x64">
+			<parameter name="os" value="windows2008r2x64"></parameter> 
+			<parameter name="type" value="ui"></parameter> 
+			<parameter name="browser" value="firefox"></parameter> 
+				<classes> 
+					<class name="com.symantec.vip.automation.UserInterfaceRegressionTest_kesav" /> 
+ 			</classes> 
+ 		</test>  -->
+ 		 <test name="Tests on Windows 2012 R2 x64" preserve-order="true">
+			<parameter name="os" value="windows2012r2x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.UserInterfaceRegressionTest_kesav" />
+			</classes>
+		</test>
+ 		<!-- <test name="User Interface Tests on RHEL70 x64"> 
+ 			<parameter name="os" value="rhel70x64"></parameter> 
+ 			<parameter name="type" value="rheld70"></parameter> 
+ 			<parameter name="browser" value="firefox"></parameter> 
+ 			<classes> 
+ 				<class name="com.symantec.vip.automation.UserInterfaceRegressionTest_kesav" /> 
+ 			</classes> 
+ 		</test>  -->
+ 		<!--  <test name="Tests on Windows 2016 R2 x64" preserve-order="true">
+			<parameter name="os" value="windows2016x64"></parameter>
+			<parameter name="type" value="wind16"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.UserInterfaceRegressionTest_kesav" />
+			</classes>
+		</test> -->
+	</suite>
+</suites>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="Configuration Export Import Test" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<suite-files>
+		    
+			<suite-file path="testng_import_910_kesav.xml" />
+			<suite-file path="testng_import_961_kesav.xml" />
+			<suite-file path="testng_import_920_kesav.xml" />
+			<suite-file path="testng_import_971_kesav.xml" />
+			<suite-file path="testng_import_930_kesav.xml" />
+			<suite-file path="testng_import_950_kesav.xml" />
+			<suite-file path="testng_import_941_kesav.xml" />
+			<suite-file path="testng_import_933_kesav.xml" />
+		</suite-files>
+	</suite>
+</suites>

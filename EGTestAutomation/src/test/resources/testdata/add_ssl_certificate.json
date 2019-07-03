@@ -1,0 +1,30 @@
+[{
+		"ssl_certificate_path":"/Users/vipeg/Documents/Automation/Resources/SSLCerts/ssl.p12",
+		"ssl_certificate_password":"1Password",
+		"alias_name":"ssltest1",
+		"cn_name":"vip33-win8-p1-a",
+		"valid_from_date":"Jul 25, 2017",
+		"valid_till_date":"Jul 25, 2018",
+		"test_scenario":"Adding multiple SSL Certificate"
+
+},
+{
+		"ssl_certificate_path":"/Users/vipeg/Documents/Automation/Resources/SSLCerts/ssl2.p12",
+		"ssl_certificate_password":"1Password",
+		"alias_name":"ssltest2",
+		"cn_name":"vip33-win8-p1-a",
+		"valid_from_date":"Jul 25, 2017",
+		"valid_till_date":"Jul 25, 2018",
+		"test_scenario":"Adding multiple SSL Certificate"
+
+},
+{
+		"ssl_certificate_path":"/Users/vipeg/Documents/Automation/Resources/SSLCerts/ssl.p12",
+		"ssl_certificate_password":"1Password",
+		"alias_name":"ssltest3",
+		"cn_name":"vip33-win8-p1-a",
+		"valid_from_date":"Jul 25, 2017",
+		"valid_till_date":"Jul 25, 2018",
+		"test_scenario":"Adding multiple SSL Certificate"
+
+}]

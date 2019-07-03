@@ -1,0 +1,11 @@
+[
+{
+		"ssl_certificate_path":"/Users/vipeg/Documents/Automation/Resources/SSLCerts/ssl.p12",
+		"ssl_certificate_password":"1Password",
+		"alias_name":"ssltest1",
+		"cn_name":"vip33-win8-p1-a",
+		"valid_from_date":"Apr 10, 2015",
+		"valid_till_date":"May 14, 2017",
+		"test_scenario":"Adding multiple SSL Certificate"
+
+}]

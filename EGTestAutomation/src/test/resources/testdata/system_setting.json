@@ -1,0 +1,13 @@
+[
+{
+	"sync_cluster_name":"Test1",
+	"test_scenario":"System setting. Cluster name :Test1"
+},
+{
+	"sync_cluster_name":"Test2",
+	"test_scenario":"System setting. Cluster name :Test2"
+},
+{
+	"sync_cluster_name":"assssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+	"test_scenario":"System setting. Cluster name :assssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+}]

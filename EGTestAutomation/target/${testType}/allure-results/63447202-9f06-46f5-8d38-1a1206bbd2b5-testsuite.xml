@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1561981316231" stop="1561981508694" version="1.4.12" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Import Configuration From EG 9.8.0 : Windows 2016 R2 x64[os=windows2016x64, browser=firefox, productSourceVersion=9.8.0, type=common1]</name>
+    <title>Import Configuration From EG 9.8.0 : Windows 2016 R2 x64[os=windows2016x64, browser=firefox, productSourceVersion=9.8.0, type=common1]</title>
+    <test-cases>
+        <test-case start="1561981323172" stop="1561981333048" status="passed">
+            <name>Start_All_Tunnel_Servers</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981333226" stop="1561981373392" status="passed">
+            <name>Start_All_Validation_Servers</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981373407" stop="1561981382677" status="passed">
+            <name>Start_LDAP_Sync_Service</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981382688" stop="1561981392005" status="passed">
+            <name>Start_SSP_Service</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981392018" stop="1561981401374" status="passed">
+            <name>Start_VIP_Manager_IDP_Service</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981401407" stop="1561981401413" status="canceled">
+            <name>Post_Import_UAO_OTP_All_Validation_Tests</name>
+            <failure>
+                <message>RuntimeException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 2 column 5</message>
+                <stack-trace>java.lang.RuntimeException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 2 column 5
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 2 column 5
+	at com.google.gson.Gson.fromJson(Gson.java:815)
+	at com.symantec.vip.automation.utils.DataReader.getHashMapFromJsonFile(DataReader.java:65)
+	at com.symantec.vip.automation.DataProvider.postImportUAO(DataProvider.java:702)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
+	... 23 more
+Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 2 column 5
+	at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:338)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:172)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	... 31 more
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981401461" stop="1561981402895" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981402916" stop="1561981403954" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981403970" stop="1561981404939" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981404964" stop="1561981405976" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981405999" stop="1561981407072" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=bobby@xuv.prupleclub.europe.internal, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, eg_comp_version=9.7.9, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - UPN &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981407096" stop="1561981408067" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981408088" stop="1561981408881" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - DNS\ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981408902" stop="1561981409672" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - NETBIOS SLASH ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981409696" stop="1561981410509" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - GC 2012  &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981410534" stop="1561981411310" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM.SYMANTECBANGALORE.INDIA.INTERNAL\2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - GC 2012 - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981411332" stop="1561981412211" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM\2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - GC 2012 - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981412236" stop="1561981413343" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby@ecosystem.symantecbangalore.india.internal, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, eg_comp_version=9.7.9, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - GC 2012 - UPN &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981413364" stop="1561981414112" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - OPENLDAP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981414133" stop="1561981414888" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP.COM\openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - OPENLDAP - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981414910" stop="1561981415929" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP\openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - OPENLDAP - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981415949" stop="1561981420816" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - NDS &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981420839" stop="1561981423801" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL.COM\nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - NDS - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981423826" stop="1561981426854" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL\nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - NDS - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981426877" stop="1561981427728" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - ODSEE &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981427751" stop="1561981428501" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE.COM\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - ODSEE - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981428524" stop="1561981429481" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - ODSEE - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981429500" stop="1561981430297" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO, log_rot_level=7, enable_syslog=yes, expected_result=true, no_of_files_to_keep=7, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=DEBUG, local_ip=null, thread_pool_size=40, push-action=null, server_port=18323, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO - OTP auth - Correct OTP - ODSEE - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981430320" stop="1561981430947" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981430966" stop="1561981431540" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981431561" stop="1561981432145" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981432166" stop="1561981432747" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981432766" stop="1561981433396" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=bobby@xuv.prupleclub.europe.internal, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, eg_comp_version=9.7.9, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - UPN &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981433445" stop="1561981434016" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981434026" stop="1561981434598" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - DNS\ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981434617" stop="1561981435191" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - NETBIOS SLASH ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981435210" stop="1561981435797" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - GC 2012  &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981435814" stop="1561981436387" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM.SYMANTECBANGALORE.INDIA.INTERNAL\2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - GC 2012 - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981436407" stop="1561981436990" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM\2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - GC 2012 - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981437010" stop="1561981437604" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby@ecosystem.symantecbangalore.india.internal, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, eg_comp_version=9.7.9, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - GC 2012 - UPN &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981437625" stop="1561981438199" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - OPENLDAP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981438218" stop="1561981438859" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP.COM\openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - OPENLDAP - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981438879" stop="1561981439685" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP\openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - OPENLDAP - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981439705" stop="1561981442610" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - NDS &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981442630" stop="1561981445480" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL.COM\nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - NDS - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981445499" stop="1561981448335" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL\nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - NDS - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981448355" stop="1561981448969" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - ODSEE &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981448988" stop="1561981449628" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE.COM\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - ODSEE - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981449647" stop="1561981450228" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP - ODSEE - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981450247" stop="1561981450830" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=delegation_eg, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=201212, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - Correct OTP -Delegated user &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981450849" stop="1561981451486" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494948, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - InCorrect OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981451504" stop="1561981452150" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-reject, mode=ulo, remote_service_name=null, user_ldap_password=22Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_BC, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18326, push_timeout=null, expected-return-code=3, use_ldap_username=true, test_scenario=Post_Import_ULO_BC - OTP auth - InCorrect LDAP Password &gt;&gt; Access-Reject - Reason Code 3, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981452170" stop="1561981453431" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981453451" stop="1561981454701" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981454720" stop="1561981455750" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981455768" stop="1561981456818" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981456837" stop="1561981458274" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=bobby@xuv.prupleclub.europe.internal, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, eg_comp_version=9.7.9, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - UPN &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981458292" stop="1561981459284" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981459301" stop="1561981460248" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - DNS\ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981460266" stop="1561981461265" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - NETBIOS SLASH ExtAscii User &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981461283" stop="1561981462287" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - GC 2012  &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981462306" stop="1561981463471" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM.SYMANTECBANGALORE.INDIA.INTERNAL\2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - GC 2012 - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981463490" stop="1561981464430" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM\2012_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - GC 2012 - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981464497" stop="1561981465817" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby@ecosystem.symantecbangalore.india.internal, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, eg_comp_version=9.7.9, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - GC 2012 - UPN &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981465840" stop="1561981466864" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - OPENLDAP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981466885" stop="1561981467928" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP.COM\openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - OPENLDAP - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981467950" stop="1561981468935" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP\openldap_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - OPENLDAP - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981468958" stop="1561981472357" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - NDS &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981472387" stop="1561981475955" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL.COM\nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - NDS - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981475977" stop="1561981479385" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL\nds_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - NDS - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981479408" stop="1561981480435" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.2.0, user_pin=null, confirm_rad_shared=password, user_name=odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - ODSEE &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981480457" stop="1561981481487" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE.COM\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - ODSEE - DNS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981481507" stop="1561981482622" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE\odsee_bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP - ODSEE - NETBIOS\USERNAME &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981482644" stop="1561981483712" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=delegation_eg, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=201212, validation_server_name=ULO_del, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=50, push-action=null, server_port=18324, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Delegation - OTP auth - Correct OTP -Delegated user &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981483731" stop="1561981484663" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981484681" stop="1561981485418" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981485436" stop="1561981486143" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - DNS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981486162" stop="1561981487069" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - NETBIOS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981487098" stop="1561981487812" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=bobby@xuv.prupleclub.europe.internal, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, eg_comp_version=9.7.9, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - UPN &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981487831" stop="1561981488581" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - ExtAscii User &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981488599" stop="1561981489639" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=XUV.PRUPLECLUB.EUROPE.INTERNAL\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - DNS\ExtAscii User &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981489658" stop="1561981490627" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=XUV\autoëùú_éëù1, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - NETBIOS SLASH ExtAscii User &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981490638" stop="1561981491335" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - GC 2012  &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981491354" stop="1561981492222" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM.SYMANTECBANGALORE.INDIA.INTERNAL\2012_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - GC 2012 - DNS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981492232" stop="1561981492946" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ECOSYSTEM\2012_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - GC 2012 - NETBIOS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981492965" stop="1561981493714" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=2012_bobby@ecosystem.symantecbangalore.india.internal, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, eg_comp_version=9.7.9, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - GC 2012 - UPN &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981493730" stop="1561981494452" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=openldap_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - OPENLDAP &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981494472" stop="1561981495234" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP.COM\openldap_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - OPENLDAP - DNS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981495256" stop="1561981495977" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=OPENLDAP\openldap_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - OPENLDAP - NETBIOS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981495995" stop="1561981499033" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=nds_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - NDS &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981499051" stop="1561981501986" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL.COM\nds_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - NDS - DNS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981501995" stop="1561981505070" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=NOVELL\nds_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - NDS - NETBIOS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981505086" stop="1561981505813" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.5.0, user_pin=null, confirm_rad_shared=password, user_name=odsee_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - ODSEE &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981505829" stop="1561981506549" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE.COM\odsee_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - ODSEE - DNS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981506567" stop="1561981507302" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE\odsee_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - ODSEE - NETBIOS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981507312" stop="1561981507993" status="passed">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=true, minimum_eg_version=9.6.1, user_pin=null, confirm_rad_shared=password, user_name=ODSEE\odsee_bobby, expected-return-packet-type=access-accept, mode=ulopush, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_Push, log_rot_level=5, enable_syslog=yes, expected_result=true, no_of_files_to_keep=5, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, enable-radius-ldap-mapping=false, log_level=DEBUG, local_ip=null, thread_pool_size=20, push-action=null, server_port=18325, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_Push - OTP auth - Correct OTP - ODSEE - NETBIOS\USERNAME &gt;&gt; Access-Accept}]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981508011" stop="1561981508925" status="broken">
+            <name>Post_Import_ULO_OTP_All_Validation_Tests[{pass_encoding=utf-8, delegation_status=false, enable_push=null, user_pin=null, confirm_rad_shared=password, user_name=bobby, expected-return-packet-type=access-accept, mode=ulo, remote_service_name=null, user_ldap_password=1Password, push_shared_secret=null, user_otp=494949, validation_server_name=ULO_RLDAP_Mapping, log_rot_level=1, enable_syslog=yes, expected_result=true, no_of_files_to_keep=4, bc_mode=disabled, delegation_host=null, validation_server_shared_secret=password, log_level=INFO, local_ip=null, thread_pool_size=20, push-action=null, server_port=18329, push_timeout=null, expected-return-code=0, use_ldap_username=true, test_scenario=Post_Import_ULO_With_RLDAP_Mapping - Correct OTP &gt;&gt; Access-Accept, enable_radius_toldap_mapping=false}]</name>
+            <failure>
+                <message>Test was interrupted</message>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="19127@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1561981316231" stop="1561981508684" status="broken">
+            <name>Import Configuration From EG 9.8.0 : Windows 2016 R2 x64[os=windows2016x64, browser=firefox, productSourceVersion=9.8.0, type=common1]</name>
+            <title>Import Configuration From EG 9.8.0 : Windows 2016 R2 x64[os=windows2016x64, browser=firefox, productSourceVersion=9.8.0, type=common1]</title>
+            <failure>
+                <message>Test suite was interrupted, some test cases may be lost</message>
+            </failure>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

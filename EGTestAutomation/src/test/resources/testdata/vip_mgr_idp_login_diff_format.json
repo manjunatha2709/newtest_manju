@@ -1,0 +1,11 @@
+[
+{
+	"vip_username":"autoèéëùúüà",
+	"vip_password":"1Password",
+	"test_scenario":"VIP Manager idp login. username: autoèéëùúüà"
+},
+{
+	"vip_username":"xuv\\autoèéëùúüà",
+	"vip_password":"1Password",
+	"test_scenario":"VIP Manager idp login. username: XUV\\autoèéëùúüà"
+}]

@@ -1,0 +1,38 @@
+[  
+   {  
+      "expected_result_cv":"true",
+      "test_scenario":"Create UO Application Template Basic (Oracle - Open SSO - UO)",
+      "validation_server_name":"or_opensso_uo",
+      "server_port":"4887",
+      "vendor":"Oracle",
+      "application_name":"OpenSSO",
+      "mode_keyword":"UserID - Security Code",
+      "mode":"uo",
+      "validation_server_shared_secret":"password1",
+      "confirm_rad_shared":"password1"
+   },
+   {  
+      "expected_result_cv":"true",
+      "test_scenario":"Create UPO Application Template Basic (PulseSecure - SBR - UPO)",
+      "validation_server_name":"jun_sbr_upo",
+      "server_port":"4888",
+      "vendor":"PulseSecure",
+      "application_name":"Steel-Belted RADIUS (SBR)",
+      "mode_keyword":"UserID - Access PIN - Security Code",
+      "mode":"upo",
+      "validation_server_shared_secret":"password1",
+      "confirm_rad_shared":"password1"
+   },
+   {  
+      "expected_result_cv":"true",
+      "test_scenario":"Create ULO Application Template Basic (PulseSecure - SBR - ULO)",
+      "validation_server_name":"jun_sbr_ulo",
+      "server_port":"4889",
+      "vendor":"PulseSecure",
+      "application_name":"Steel-Belted RADIUS (SBR)",
+      "mode_keyword":"UserID - LDAP Password - Security Code",
+      "mode":"ulo",
+      "validation_server_shared_secret":"password1",
+      "confirm_rad_shared":"password1"
+   }
+]

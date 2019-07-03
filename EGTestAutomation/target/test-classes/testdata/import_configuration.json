@@ -1,0 +1,37 @@
+[{
+	"settings":"test",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting. Negative scenario, wrong settings."
+},{
+	"settings":"Validation Servers",
+	"expected_result":"true",		"import_type":"same_version",    "test_scenario":"Import setting.Validation Servers settings."
+},{
+	"settings":"Live Update Settings",
+	"expected_result":"true",		"import_type":"same_version",    "test_scenario":"Import setting.Live Updat settings."
+},{
+	"settings":" ",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.zempty settings."
+},{
+	"settings":"User Store Settings",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.User Stores settings."
+},{
+	"settings":"Proxy Settings",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.Proxy settings."
+},{
+	"settings":"Syslog Settings",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.Syslog settings."
+},{
+	"settings":"User Store Settings,Self Service Portal IdP",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.Self Service Portal IdP settings."
+},{
+	"settings":"User Store Settings,VIP Manager IdP",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.VIP Manager Id settings."
+},{
+	"settings":"User Store Settings,LDAP Sync",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.LDAP Sync settings."
+},{
+	"settings":"User Store Settings,Admin Store Settings",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.Admin Store  settings."
+},{
+	"settings":"User Store Settings,Console Admin Settings",
+	"expected_result":"false",		"import_type":"same_version",    "test_scenario":"Import setting.Console Admin settings."
+}]

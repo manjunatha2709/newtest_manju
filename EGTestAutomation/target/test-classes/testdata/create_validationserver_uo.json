@@ -1,0 +1,22 @@
+[
+{
+    "expected_result_cv":"true",
+    "mode":"uo",
+    "validation_server_name":"uo1",
+    "local_ip":"",
+    "server_port":"1856",
+    "thread_pool_size":"15",
+    "bc_mode":"disabled",
+    "log_level":"error",
+    "log_rot_level":"2",
+    "no_of_files_to_keep":"5",
+    "enable_syslog":"false",
+    "validation_server_shared_secret":"password1",
+    "confirm_rad_shared":"password1",
+    "pass_encoding":"utf-8",
+    "enable_push":"false",
+    "use_ldap_username":"false",
+    "config_rad_ldap_mapping":"",
+    "delegation_status":"false",
+    "delegation_host":"",        "test_scenario":"Create validation Server > UO Mode"
+  }]

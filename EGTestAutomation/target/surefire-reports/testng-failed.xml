@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Import Configuration From EG 9.8.4]">
+  <parameter name="os" value="windows2016x64"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="productSourceVersion" value="9.8.4"/>
+  <parameter name="type" value="common1"/>
+  <listeners>
+    <listener class-name="com.symantec.vip.automation.TestListener"/>
+    <listener class-name="com.symantec.vip.automation.InvokedMethodListener"/>
+  </listeners>
+  <test name="Windows 2016 R2 x64(failed)">
+    <parameter name="os" value="windows2016x64"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="productSourceVersion" value="9.8.4"/>
+    <parameter name="type" value="common1"/>
+    <classes>
+      <class name="com.symantec.vip.automation.ConfigurationImportTest_kesav">
+        <methods>
+          <include name="Start_All_Validation_Servers"/>
+          <include name="Post_Import_UAO_OTP_All_Validation_Tests"/>
+          <include name="initTestSuite"/>
+          <include name="beforeSuite"/>
+          <include name="setProductSourceVersion"/>
+          <include name="SetEnvironment"/>
+          <include name="Product_Installation"/>
+          <include name="init_Web_Driver_for_Live_Update"/>
+          <include name="Create_Web_Driver"/>
+          <include name="Cleanup_WebDrivers"/>
+          <include name="afterImportTests"/>
+        </methods>
+      </class> <!-- com.symantec.vip.automation.ConfigurationImportTest_kesav -->
+    </classes>
+  </test> <!-- Windows 2016 R2 x64(failed) -->
+</suite> <!-- Failed suite [Import Configuration From EG 9.8.4] -->

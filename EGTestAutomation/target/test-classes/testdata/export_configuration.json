@@ -1,0 +1,21 @@
+[{
+	"is_encrypted":"true",
+	"password":"password",
+	"confirm_password":"password",
+	"expected_result":"true",        "test_scenario":"Export setting. Encryption set."
+}, {
+	"is_encrypted":"false",
+	"password":"",
+	"confirm_password":"",
+	"expected_result":"true",        "test_scenario":"Export setting. Negative scenario, Empty password."
+}, {
+	"is_encrypted":"true",
+	"password":"password",
+	"confirm_password":"password1",
+	"expected_result":"false",        "test_scenario":"Export setting. Negative scenario, wrong password."
+}, {
+	"is_encrypted":"true",
+	"password":"password",
+	"confirm_password":"a",
+	"expected_result":"false",	    "test_scenario":"Export setting. Negative scenario, wrong confirm password."
+}]

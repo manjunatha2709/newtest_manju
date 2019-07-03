@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="REGRESSION TESTS" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<test name="User Interface Tests on Windows 2008 R2 x64">
+			<parameter name="os" value="windows2008r2x64"></parameter> 
+			<parameter name="type" value="ui"></parameter> 
+			<parameter name="browser" value="firefox"></parameter> 
+				<classes> 
+					<class name="com.symantec.vip.automation.UserInterfaceRegressionTest" /> 
+ 			</classes> 
+ 		</test> 
+ 		<test name="User Interface Tests on RHEL65 x64"> 
+ 			<parameter name="os" value="rhel65x64"></parameter> 
+ 			<parameter name="type" value="ui"></parameter> 
+ 			<parameter name="browser" value="firefox"></parameter> 
+ 			<classes> 
+ 				<class name="com.symantec.vip.automation.UserInterfaceRegressionTest" /> 
+ 			</classes> 
+ 		</test> 
+		<test name="Validation Server Tests on Windows 2008 R2 x64">
+			<parameter name="os" value="windows2008r2x64"></parameter>
+			<parameter name="type" value="radius"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ValidationServerRegressionTest" />
+			</classes>
+		</test>
+ 		<test name="Validation Server Tests on RHEL65 x64"> 
+ 			<parameter name="os" value="rhel65x64"></parameter> 
+ 			<parameter name="type" value="radius"></parameter> 
+ 			<parameter name="browser" value="firefox"></parameter> 
+ 			<classes> 
+ 				<class name="com.symantec.vip.automation.ValidationServerRegressionTest" /> 
+ 			</classes> 
+ 		</test> 
+	</suite>
+</suites>

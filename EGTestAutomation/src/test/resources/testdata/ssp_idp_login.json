@@ -1,0 +1,8 @@
+[
+{
+	"ssp_username":"autoèéëùúüà",
+	"ssp_password":"1Password",
+	"is_https":"true",
+	"enable_automatic_distribution":"true",
+	"test_scenario":"SSP IDP Login. SSP Name: autoèéëùúüà"
+}]

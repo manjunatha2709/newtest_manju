@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1120, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 3,813.028 sec <<< FAILURE! - in TestSuite
+Post_Import_ULO_Push_All_Validation_Tests(com.symantec.vip.automation.ConfigurationImportTest_kesav)  Time elapsed: 29.076 sec  <<< FAILURE!
+java.lang.AssertionError: Reason Code Received:0. Meaning: Received Access-Accept from server Additional message was Received access-accept as immediate response from server
+ expected [access-reject] but found [access-accept]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.symantec.vip.automation.eg.radius.RadiusTestHelper.ValidateTestResult(RadiusTestHelper.java:262)
+	at com.symantec.vip.automation.eg.radius.RadiusTestHelper.InvokeRadiusTests(RadiusTestHelper.java:117)
+	at com.symantec.vip.automation.ConfigurationImportTest_kesav.Post_Import_ULO_Push_All_Validation_Tests(ConfigurationImportTest_kesav.java:181)
+
+Post_Import_UO_Push_All_Validation_Tests(com.symantec.vip.automation.ConfigurationImportTest_kesav)  Time elapsed: 31.642 sec  <<< FAILURE!
+java.lang.AssertionError: Reason Code Received:0. Meaning: Received Access-Accept from server Additional message was Received access-accept as immediate response from server
+ expected [access-reject] but found [access-accept]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.symantec.vip.automation.eg.radius.RadiusTestHelper.ValidateTestResult(RadiusTestHelper.java:262)
+	at com.symantec.vip.automation.eg.radius.RadiusTestHelper.InvokeRadiusTests(RadiusTestHelper.java:117)
+	at com.symantec.vip.automation.ConfigurationImportTest_kesav.Post_Import_UO_Push_All_Validation_Tests(ConfigurationImportTest_kesav.java:162)
+

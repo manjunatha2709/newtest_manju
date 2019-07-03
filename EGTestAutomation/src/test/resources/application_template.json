@@ -1,0 +1,421 @@
+{
+	"_version": 1,
+	"vendors": [{
+		"vendorName": "Apache Foundation",
+		"applications": [{
+			"applicationName": "HTTP Server",
+			"modes": ["USERID-OTP", "USERID-PIN-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "41819032",
+			"_version": 1
+		}],
+		"_id": "47578495",
+		"_version": 1
+	}, {
+		"vendorName": "Array Networks",
+		"applications": [{
+			"applicationName": "AccessDirect Remote Access SSL VPN",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "82207184",
+			"_version": 1
+		}],
+		"_id": "57562300",
+		"_version": 1
+	}, {
+		"vendorName": "Barracuda Networks",
+		"applications": [{
+			"applicationName": "Barracuda SSL VPN",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "42670618",
+			"_version": 1
+		}],
+		"_id": "95481656",
+		"_version": 1
+	}, {
+		"vendorName": "CheckPoint Software",
+		"applications": [{
+			"applicationName": "CheckPoint VPN",
+			"modes": ["USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "40337339",
+			"_version": 1
+		}],
+		"_id": "48087062",
+		"_version": 1
+	}, {
+		"vendorName": "Cisco Systems",
+		"applications": [{
+			"applicationName": "Access Control Server (ACS)",
+			"modes": ["USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "23891879",
+			"_version": 1
+		}, {
+			"applicationName": "Adaptive Security Appliance (ASA)",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "71772879",
+			"_version": 1
+		}, {
+			"applicationName": "Identity Services Engine (ISE)",
+			"modes": ["USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "62555671",
+			"_version": 1
+		}, {
+			"applicationName": "Virtual Private Network 5500 (VPN)",
+			"modes": ["USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "89498382",
+			"_version": 1
+		}],
+		"_id": "49234808",
+		"_version": 1
+	}, {
+		"vendorName": "Citrix System",
+		"applications": [{
+			"applicationName": "Access Gateway",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "25015197",
+			"_version": 1
+		}, {
+			"applicationName": "Citrix Netscaler",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "19637738",
+			"_version": 1
+		}, {
+			"applicationName": "GoToMyPC",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "73584645",
+			"_version": 1
+		}, {
+			"applicationName": "StoreFront",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "46440837",
+			"_version": 1
+		}, {
+			"applicationName": "Web Interface",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "55217045",
+			"_version": 1
+		}],
+		"_id": "63143685",
+		"_version": 1
+	}, {
+		"vendorName": "F5 Networks",
+		"applications": [{
+			"applicationName": "BIG-IP Access Policy Manager",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "27638715",
+			"_version": 1
+		}, {
+			"applicationName": "FirePass VPN",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "41229289",
+			"_version": 1
+		}],
+		"_id": "98521637",
+		"_version": 1
+	}, {
+		"vendorName": "IBM",
+		"applications": [{
+			"applicationName": "Security Access Manager 7/8 (EAI-Apache)",
+			"modes": ["USERID-OTP", "USERID-PIN-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "86894275",
+			"_version": 1
+		}, {
+			"applicationName": "Tivoli Access Manager 6.x (CDAS)",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "42279666",
+			"_version": 1
+		}],
+		"_id": "75799922",
+		"_version": 1
+	}, {
+		"vendorName": "Microsoft",
+		"applications": [{
+			"applicationName": "Active Directory Federation Services (ADFS) 2.0",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "57475149",
+			"_version": 1
+		}, {
+			"applicationName": "Forefront Threat Management Gateway (TMG)",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "20471928",
+			"_version": 1
+		}, {
+			"applicationName": "Forefront Unified Access Gateway (UAG)",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "85778202",
+			"_version": 1
+		}, {
+			"applicationName": "GINA",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "52107388",
+			"_version": 1
+		}, {
+			"applicationName": "Internet Information Services 7/8",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "26792888",
+			"_version": 1
+		}, {
+			"applicationName": "Outlook Web Access (OWA)",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "58265541",
+			"_version": 1
+		}, {
+			"applicationName": "Remote Desktop Web Access",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "25108863",
+			"_version": 1
+		}, {
+			"applicationName": "Sharepoint Portal Server (SPS)",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "95586885",
+			"_version": 1
+		}, {
+			"applicationName": "Windows Credential Provider",
+			"modes": ["USERID-OTP"],
+			"delegation": false,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "79199907",
+			"_version": 1
+		}],
+		"_id": "96115980",
+		"_version": 1
+	}, {
+		"vendorName": "Oracle",
+		"applications": [{
+			"applicationName": "Access Manager 10g",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "61746152",
+			"_version": 1
+		}, {
+			"applicationName": "OpenSSO",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "77061722",
+			"_version": 1
+		}],
+		"_id": "23286178",
+		"_version": 1
+	}, {
+		"vendorName": "Palo Alto Networks",
+		"applications": [{
+			"applicationName": "Global Protect/Gateway",
+			"modes": ["USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "10574666",
+			"_version": 1
+		}],
+		"_id": "74230001",
+		"_version": 1
+	}, {
+		"vendorName": "PulseSecure",
+		"applications": [{
+			"applicationName": "Pulse Connect Secure",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "45774749",
+			"_version": 1
+		}, {
+			"applicationName": "Steel-Belted RADIUS (SBR)",
+			"modes": ["USERID-PIN-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "62097712",
+			"_version": 1
+		}],
+		"_id": "90853467",
+		"_version": 1
+	}, {
+		"vendorName": "SonicWALL",
+		"applications": [{
+			"applicationName": "Aventail SSL VPN",
+			"modes": ["USERID-OTP", "USERID-LDAPPASSWORD-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "12929000",
+			"_version": 1
+		}],
+		"_id": "17745825",
+		"_version": 1
+	}, {
+		"vendorName": "Unix/Linux",
+		"applications": [{
+			"applicationName": "Pluggable Authentication Module (PAM)",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": false,
+			"ldapToRadiusMapping": true,
+			"pinReset": false,
+			"_id": "50798087",
+			"_version": 1
+		}],
+		"_id": "85495648",
+		"_version": 1
+	}, {
+		"vendorName": "VMware",
+		"applications": [{
+			"applicationName": "VMware View",
+			"modes": ["USERID-OTP"],
+			"delegation": true,
+			"type": "RADIUS",
+			"challengeSupported": true,
+			"ldapToRadiusMapping": true,
+			"pinReset": true,
+			"_id": "66647501",
+			"_version": 1
+		}],
+		"_id": "10003247",
+		"_version": 1
+	}],
+	"changedAppIds": [],
+	"changedVendorIds": []
+}

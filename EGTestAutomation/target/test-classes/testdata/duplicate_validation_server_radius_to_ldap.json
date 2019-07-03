@@ -1,0 +1,5 @@
+[{
+   "duplicate_port_number":"1870",
+	"duplicate_radius_secret":"password",
+	"duplicate_confirm_radius_secret":"password",        "test_scenario":"Duplicate validation server > Radius to LDAP> port 1870"
+}]

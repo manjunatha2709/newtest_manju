@@ -1,0 +1,25 @@
+[
+ {
+      "test_priority":"2",
+      "test_scenario":"PIN_Reset_Flow_Validation_Tests_on_UPO_Application_Server_Challenge_With_LDAP_Reference",
+      "validation_server_name":"jun_sbr_upo",
+      "server_port":"4888",
+      "auth_type":"oob_challenge",
+      "validation_server_shared_secret":"password1",
+      "mode":"upo",
+      "request_type":"pinreset",
+      "wait_time_before_confirm_password":"1000",
+      "user_pin":"123456",
+      "user_pin_new":"456767897",
+      "user_pin_confirm":"456767897",
+      "user_otp":"494949",
+      "user_name":"autoË.Reqñ",
+      "expected-return-packet-type":"access-accept",
+      "expected-return-code":"0",
+      "use_ldap_username":"true",
+      "radius_ldap_supported":"false",
+      "delegation_status":"false",
+      "enable_access_challenge":"true",
+      "confirm_rad_shared":"password1"
+   }
+   ]

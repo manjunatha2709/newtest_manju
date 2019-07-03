@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="Validation Server Performance Test" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<test name="Tests on Windows 2012 R2 x64">
+			<parameter name="os" value="windows2012x64"></parameter>
+			<parameter name="type" value="perf"></parameter>
+			<parameter name="browser" value="chrome"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.RadiusPerformanceTest" />
+			</classes>
+		</test>
+	</suite>
+</suites>

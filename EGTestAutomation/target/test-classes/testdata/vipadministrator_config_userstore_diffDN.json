@@ -1,0 +1,14 @@
+[{
+    "expected_result_vipadmin":"true",
+    "vip_admin_userstore":"userdndiff1",
+	"vip_admin_base_dn":"OU=Automation_DONT_DELETE,DC=xuv,DC=prupleclub,DC=europe,DC=internal",
+	"vip_admin_user_filter":"(&(&(objectClass=user)(objectCategory=person))(sAMAccountName=%s))",
+	"vip_admin_group_fliter":"(memberof=CN=VIP Administrators,OU=Automation_DONT_DELETE,DC=xuv,DC=prupleclub,DC=europe,DC=internal)",
+	"vip_admin_test_user":"bobby",
+	"firstname_attribute":"givenname",
+	"lastname_attribute":"sn",
+	"group_mapping_name":"admin1",
+	"membership_attribute_name":"memberof",
+	"membership_group_dn":"(memberof=CN=VIP Administrators,OU=Automation_DONT_DELETE,DC=xuv,DC=prupleclub,DC=europe,DC=internal)",
+	"vip_administrator_group_name":"Help",		"test_scenario":"Configure VIP Administrator. Base dn : OU=Automation_DONT_DELETE. membership attribute name: memberof"
+  }]

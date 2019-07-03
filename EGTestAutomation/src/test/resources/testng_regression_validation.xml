@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="REGRESSION TESTS - Validation" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<!-- <test name="Tests on Windows 2016 (Standered) x64">
+			<parameter name="os" value="windows2016x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ValidationServerRegressionTest_kesav" />
+
+			</classes>
+		</test>  -->
+	<!-- 	<test name="Tests on Windows 2012 (Standered) x64">
+			<parameter name="os" value="windows2012r2x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ValidationServerRegressionTest_kesav" />
+			</classes>
+		</test> -->
+ 		<!--   <test name="Validation Server Tests on RHEL6.10 x64"> 
+ 			<parameter name="os" value="rhel70x64"></parameter> 
+ 			<parameter name="type" value="common1"></parameter> 
+ 			<parameter name="browser" value="firefox"></parameter> 
+ 			<classes> 
+ 				<class name="com.symantec.vip.automation.ValidationServerRegressionTest_kesav" /> 
+ 			</classes> 
+ 		</test> --> 
+ 		<!--  <test name="Validation Server Tests on RHEL73 x64"> 
+ 			<parameter name="os" value="rhel73x64"></parameter> 
+ 			<parameter name="type" value="common1"></parameter> 
+ 			<parameter name="browser" value="firefox"></parameter> 
+ 			<classes> 
+ 				<class name="com.symantec.vip.automation.ValidationServerRegressionTest_kesav" /> 
+ 			</classes> 
+ 		</test>  -->
+ 		 <test name="Validation Server Tests on RHEL75 x64"> 
+ 			<parameter name="os" value="rhel75x64"></parameter> 
+ 			<parameter name="type" value="common1"></parameter> 
+ 			<parameter name="browser" value="firefox"></parameter> 
+ 			<classes> 
+ 				<class name="com.symantec.vip.automation.ValidationServerRegressionTest_kesav" /> 
+ 			</classes> 
+ 		</test> 
+	</suite>
+</suites>

@@ -1,0 +1,33 @@
+[
+  {
+    "expected_result": "true",
+    "expected_result_cv": "true",
+    "mode": "uol",
+    "validation_server_name": "uol_updated",
+    "local_ip": "",
+    "server_port": "1702",
+    "thread_pool_size": "15",
+    "bc_mode": "disabled",
+    "log_level": "error",
+    "log_rot_level": "2",
+    "no_of_files_to_keep": "5",
+    "enable_syslog": "no",
+    "validation_server_shared_secret": "password1",
+    "confirm_rad_shared": "password1",
+    "pass_encoding": "utf-8",
+    "use_ldap_username": "no",
+    "enable-radius-ldap-mapping": "true",
+    "delegation_status": "false",
+    "delegation_host": "",
+    "enable_push": "false",
+    "push_timeout": "45",
+    "remote_service_name": "Symphony",
+    "user_name": "bobby",
+    "user_ldap_password": "1Password",
+    "user_otp": "494949",
+    "user_pin": "",
+    "push-action": "",
+    "expected-return-packet-type": "access-accept",
+    "expected-return-code": "0"
+  }
+]

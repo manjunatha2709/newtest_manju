@@ -1,0 +1,9 @@
+[{
+	"test_scenario":"Testing configure console authentication for User Principal name. ",
+    "expected_result_vipadmin":"true",
+	"console_auth_base_dn":"OU=Automation_DONT_DELETE,DC=xuv,DC=prupleclub,DC=europe,DC=internal",
+	"console_auth_user_filter":"(&(&(objectClass=user)(objectCategory=person))(userprincipalname=%s))",
+	"console_auth_group_fliter":"(memberof=CN=VIP Administrators,OU=Automation_DONT_DELETE,DC=xuv,DC=prupleclub,DC=europe,DC=internal)",
+	"test_user_name":"bobby@xuv.prupleclub.europe.internal",
+	"test_user_name_password":"1Password"
+  }]

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="FEATURE TEST" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+		</listeners>
+		<test name="Tests on Windows 2012 R2 x64" preserve-order="true">
+			<parameter name="os" value="windows2012x64"></parameter>
+			<parameter name="type" value="radius"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.FeatureTest" />
+			</classes>
+		</test>
+	<!--  	<test name="Tests on RHEL 6.5 x64" preserve-order="true">
+			<parameter name="os" value="rhel65x64"></parameter>
+			<parameter name="type" value="feature"></parameter>
+			<parameter name="browser" value="chrome"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.FeatureTest" />
+			</classes>
+		</test> -->
+	</suite>
+</suites>

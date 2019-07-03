@@ -1,0 +1,42 @@
+[
+{
+	"ssp_username":"autoèéëùúüà",
+	"ssp_password":"1Password",
+	"test_scenario":"SSP IDP Login. SSP Name: autoèéëùúüà"
+	
+},
+{
+	"ssp_username":"xuv\\autoèéëùúüà",
+	"ssp_password":"1Password",
+	"test_scenario":"SSP IDP Login. SSP Name: xuv\\autoèéëùúüà"
+	
+},
+{
+	"ssp_username":"autoèéëùúüà@xuv.prupleclub.europe.internal",
+	"ssp_password":"1Password",
+	"test_scenario":"SSP IDP Login. SSP Name: autoèéëùúüà@xuv.prupleclub.europe.internal"
+	
+},
+{
+	"ssp_username":"autoË.Reqñ",
+	"ssp_password":"âäñÒÙË@12pas",
+	"test_scenario":"SSP IDP Login. SSP Name: autoË.Reqñ"
+	
+},
+{
+	"ssp_username":"autoëùú.éëù",
+	"ssp_password":"1Password",
+	"test_scenario":"SSP IDP Login. SSP Name: autoëùú.éëù"
+	
+},
+{
+	"ssp_username":"autoëùú_éëù",
+	"ssp_password":"1Password",
+	"test_scenario":"SSP IDP Login. SSP Name: autoëùú_éëù "
+	
+},
+{
+	"ssp_username":"autoxèaébëcùdú4",
+	"ssp_password":"1Password",
+	"test_scenario":"SSP IDP Login. SSP Name: autoxèaébëcùdú4"
+}]

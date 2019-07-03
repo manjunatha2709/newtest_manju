@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="Import Configuration From EG 9.3.0" parallel = "tests" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		
+<!-- 			<test name="Windows 2012 R2 x64">
+			<parameter name="os" value="windows2012r2x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test> -->
+		
+	<!-- 		<test name="Windows 2016 R2 x64">
+			<parameter name="os" value="windows2016x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+			<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+			</test> -->
+<!-- 		
+			<test name="Windows 2019 R2 x64">
+			<parameter name="os" value="windows2019r2x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  -->
+		
+		<!-- 		<test name="RHEL6.8x64">
+			<parameter name="os" value="rhel68x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  -->
+		
+		
+		<!-- 	<test name="RHEL6.10x64">
+			<parameter name="os" value="rhel610x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+			<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+			</test>  -->
+			
+	<!-- 	<test name="RHEL7.2x64">
+			<parameter name="os" value="rhel72x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+			<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  -->
+		
+	
+
+		
+	
+		<!-- <test name="RHEL74 x64">
+			<parameter name="os" value="rhel74x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test> -->
+ 
+		 	<test name="RHEL75 x64">
+			<parameter name="os" value="rhel75x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+			<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+			</test>
+ 
+  
+  	<!-- 	<test name="RHEL7.6x64">
+			<parameter name="os" value="rhel76x64"></parameter>
+			<parameter name="type" value="common1"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.3.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  -->
+		
+		
+	</suite>
+</suites>

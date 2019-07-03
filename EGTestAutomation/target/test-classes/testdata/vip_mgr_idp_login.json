@@ -1,0 +1,7 @@
+[
+{
+	"vip_username":"autoèéëùúüà",
+	"vip_password":"1Password",
+	"is_https":"true",	
+	"test_scenario":"VIP Manager idp login. username: autoèéëùúüà. HTTPS configured."
+}]

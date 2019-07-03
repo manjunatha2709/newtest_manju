@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1562133194585" stop="1562133297720" version="1.4.12" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Import Configuration From EG 9.8.4 : Windows 2016 R2 x64[os=windows2016x64, browser=firefox, productSourceVersion=9.8.4, type=common1]</name>
+    <title>Import Configuration From EG 9.8.4 : Windows 2016 R2 x64[os=windows2016x64, browser=firefox, productSourceVersion=9.8.4, type=common1]</title>
+    <test-cases>
+        <test-case start="1562133201788" stop="1562133219209" status="passed">
+            <name>AddVIPCertificate_FirstTime</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="35823@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1562133219415" stop="1562133297669" status="passed">
+            <name>Import_Cross_Version_Configuration</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Kesavs-MacBook-Air.local"/>
+                <label name="thread" value="35823@Kesavs-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="Import Configuration From EG 9.7.0" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<!-- <test name="Windows 2012 R2 x64">
+			<parameter name="os" value="windows2012r2x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.7.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+			 </test> -->
+		  <!--  <test name="RHEL7 x64">
+			<parameter name="os" value="rhel70x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.7.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>   -->
+		  <test name="RHEL7.3x64">
+			<parameter name="os" value="rhel73x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.7.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  
+		 
+		<!-- 	<test name="Tests on Windows 2016 R2">
+			<parameter name="os" value="windows2016x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.7.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  -->
+		<!-- <test name="Tests on RHEL 7.4 x64">
+			<parameter name="os" value="rhel74x64"></parameter>
+			<parameter name="type" value="common"></parameter>
+			<parameter name="browser" value="firefox"></parameter>
+			<parameter name="productSourceVersion" value="9.7.0"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.ConfigurationImportTest_kesav" />
+			</classes>
+		</test>  -->
+
+	</suite>
+</suites>

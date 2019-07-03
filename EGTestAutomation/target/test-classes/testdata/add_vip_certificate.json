@@ -1,0 +1,30 @@
+[{
+		"vip_certificate_path":"C:\\Automation\\Resources\\VIPCert\\production_vip_cert.p12",
+		"vip_certificate_password":"1Password",
+		"alias_name":"viptest1",
+		"cn_name":"vip_cert_automation",
+		"valid_from_date":"Jun 24, 2014",
+		"valid_till_date":"Jun 24, 2016",
+		"test_scenario":"Adding multiple VIP Certificate"
+
+},
+{
+		"vip_certificate_path":"C:\\Automation\\Resources\\VIPCert\\production_vip_cert.p12",
+		"vip_certificate_password":"1Password",
+		"alias_name":"viptest2",
+		"cn_name":"vip_cert_automation",
+		"valid_from_date":"Jun 24, 2014",
+		"valid_till_date":"Jun 24, 2016",
+		"test_scenario":"Adding multiple VIP Certificate"
+
+},
+{
+		"vip_certificate_path":"C:\\Automation\\Resources\\VIPCert\\production_vip_cert_1.p12",
+		"vip_certificate_password":"1Password",
+		"alias_name":"viptest3",
+		"cn_name":"vip_automation_cert",
+		"valid_from_date":"Apr 10, 2015",
+		"valid_till_date":"Apr 10, 2017",
+		"test_scenario":"Adding multiple VIP Certificate"
+
+}]

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="VIP EG Suite - Regression" parallel="tests" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+<!-- 		<test name="Tests on Windows 2008 R2 x64"> -->
+<!-- 			<parameter name="os" value="windows2012x64"></parameter> -->
+<!-- 			<parameter name="type" value="radius"></parameter> -->
+<!-- 			<parameter name="browser" value="chrome"></parameter> -->
+<!-- 			<classes> -->
+<!-- 				<class name="com.symantec.vip.automation.TestDevelopement" /> -->
+<!-- 			</classes> -->
+<!-- 		</test> -->
+		
+		<test name="Tests on RHEL 6.5 x64" preserve-order="true">
+			<parameter name="os" value="windows2012x64"></parameter>
+			<parameter name="type" value="radius"></parameter>
+			<parameter name="browser" value="chrome"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.PerfTest" />
+			</classes>
+		</test>
+		<!-- <test name="Windows 2008 R2 x64"> -->
+		<!-- <parameter name="os" value="windows2008r2x64"></parameter> -->
+		<!-- <parameter name="type" value="ui"></parameter> -->
+		<!-- <parameter name="browser" value="chrome"></parameter> -->
+		<!-- <classes> -->
+		<!-- <class name="com.symantec.vip.automation.TestDevelopement" /> -->
+		<!-- </classes> -->
+		<!-- </test> -->
+		<!-- <test name="Tests on Windows 2008 R2"> -->
+		<!-- <parameter name="os" value="windows2008r2x64"></parameter> -->
+		<!-- <parameter name="type" value="ui"></parameter> -->
+		<!-- <parameter name="browser" value="chrome"></parameter> -->
+		<!-- <classes> -->
+		<!-- <class name="com.symantec.vip.automation.TestDevelopement" /> -->
+		<!-- </classes> -->
+		<!-- </test> -->
+		<!-- <test name="Tests on RHEL 6.5 x64" preserve-order="true"> -->
+		<!-- <parameter name="os" value="rhel65x64"></parameter> -->
+		<!-- <parameter name="type" value="radius"></parameter> -->
+		<!-- <parameter name="browser" value="chrome"></parameter> -->
+		<!-- <classes> -->
+		<!-- <class name="com.symantec.vip.automation.TestDevelopement" /> -->
+		<!-- </classes> -->
+		<!-- </test> -->
+
+	</suite>
+</suites>

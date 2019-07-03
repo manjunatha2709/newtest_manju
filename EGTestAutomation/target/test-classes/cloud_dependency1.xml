@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suites>
+	<suite name="Cloud Dependency Test" verbose="10">
+		<listeners>
+			<listener class-name="com.symantec.vip.automation.TestListener" />
+			<listener class-name="com.symantec.vip.automation.InvokedMethodListener" />
+		</listeners>
+		<test name="Tests on Windows 2012 R2 x64" preserve-order="true">
+			<parameter name="os" value="rhel65x64"></parameter>
+			<parameter name="type" value="radius"></parameter>
+			<parameter name="browser" value="chrome"></parameter>
+			<classes>
+				<class name="com.symantec.vip.automation.CloudDependencyTest1" />
+			</classes>
+		</test>
+	</suite>
+</suites>

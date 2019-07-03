@@ -1,0 +1,21 @@
+[
+{
+	"facility_name":"local3",
+	"host_name_1":"10.212.129.215",
+	"port_1":"514",
+	"host_name_2":"10.212.129.221",
+	"port_2":"514",
+	"host_name_3":"",
+	"port_3":"",
+	"test_scenario":"Sys Log. hosts: 10.212.129.215,10.212.129.221"
+},
+{
+	"facility_name":"local3",
+	"host_name_1":"10.212.129.215",
+	"port_1":"514",
+	"host_name_2":"",
+	"port_2":"",
+	"host_name_3":"",
+	"port_3":"",
+	"test_scenario":"Sys Log. hosts: 10.212.129.215"
+}]

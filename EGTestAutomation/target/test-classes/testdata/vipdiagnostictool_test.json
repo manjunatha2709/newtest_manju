@@ -1,0 +1,25 @@
+[{
+	"switch_name":"",
+	"loop_count" :"",
+	"expected_result":"true",		"test_scenario":"VIP Diagnostic Tool. Switch Name: <empty>"
+}, {
+	"switch_name":"--ALL",
+	"loop_count" :"",
+	"expected_result":"true",		"test_scenario":"VIP Diagnostic Tool. Switch Name: -ALL"
+}, {
+	"switch_name":"--LDAP",
+	"loop_count" :"",
+	"expected_result":"true",		"test_scenario":"VIP Diagnostic Tool. Switch Name:--LDAP"
+}, {
+	"switch_name":"--Cloud",
+	"loop_count" :"",
+	"expected_result":"true",		"test_scenario":"VIP Diagnostic Tool. Switch Name: --Cloud"
+}, {
+	"switch_name":"--Misc",
+	"loop_count" :"",
+	"expected_result":"true",		"test_scenario":"VIP Diagnostic Tool. Switch Name: --Misc"
+}, {
+	"switch_name":"--Loop",
+	"loop_count" :"5",
+	"expected_result":"true",		"test_scenario":"VIP Diagnostic Tool. Switch Name: -- Loop "
+}]

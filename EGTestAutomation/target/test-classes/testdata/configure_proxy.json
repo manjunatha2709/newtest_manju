@@ -1,0 +1,14 @@
+[{
+	"expected_result":"true",
+	"proxy_host_ip":"10.212.125.229",
+	"proxy_host_port":"3128",
+	"proxy_username":"vipadmin",
+	"proxy_password":"vip@dmin123",	"test_scenario":"configure proxy with ip 10.212.125.229 "	
+},
+{
+	"expected_result":"true",
+	"proxy_host_ip":"10.212.125.230",
+	"proxy_host_port":"3128",
+	"proxy_username":"",
+	"proxy_password":"",	"test_scenario":"configure proxy with ip 10.212.125.230 "
+}]

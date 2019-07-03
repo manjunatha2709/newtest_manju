@@ -1,0 +1,181 @@
+[{
+	"input_link":"SigningIntoVIPEnterpriseGatewayConfigurationConsole",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates",
+	"expected_result":"false"
+},{
+	"input_link":"ManagingCertificates,TrustedCACertificates",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,EnablingSSLforVIPEnterpriseGateway",
+	"expected_result":"true"
+},{
+	"input_link":" ",
+	"expected_result":"false"
+},{
+	"input_link":"ManagingCertificates,TestWrongData",
+	"expected_result":"false"
+},{
+	"input_link":"ManagingCertificates,GeneratinganSSLKey",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,SubmittingaCertificateSigningRequest",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,ImportingaCAChainintoYourTrustedCAStore",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,ImportingaVIPCertificate",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,SecuringDataUsingSSLCertificates",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,ImportingaPKCS",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,SubmittingaCertificateSigningRequest",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,ImportingaCAChainintoYourTrustedCAStore",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingCertificates,AddingaTrustedCACertificatetoVIPEnterpriseGateway",
+	"expected_result":"true"
+},{
+	"input_link":"InitialConfigurations,ConfiguringtheConsoleSettings",
+	"expected_result":"true"
+},{
+	"input_link":"InitialConfigurations,ConfiguringHTTPProxySettings",
+	"expected_result":"true"
+},{
+	"input_link":"InitialConfigurations,ImportingVIPEnterpriseGatewayConfigurationSettings",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,AddingaUserStore",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,DeletingaUserStore",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,EditingtheConfigurationofaUserStore",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,ViewingtheDetailsofaConnection",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,AddingaNewConnectiontoaUserStore",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,DeletingaConnectionAssociatedwithaUserStore",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,ModifyingtheUserSearchCriteriaConfiguredforaUserStore",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,ConfiguringOptionalAttributestoEnhanceUserSearchinVIPManager",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,EnablingUserstoResetActiveDirectoryPassword",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,AddingaVIPUserGroupMapping",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringUserStores,ManagingtheVIPUserGroupMappingRecords",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,AddingaValidationServer",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,AboutConfiguringaDelegationServer",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,ConfiguringAutomaticBusinessContinuitySettings",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,ViewingtheAutomaticBusinessContinuitySettings",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,ModifyingtheAutomaticBusinessContinuitySettings",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,ModifyingRADIUSValidationServers",
+	"expected_result":"true"
+},{	"input_link":"ConfiguringRADIUSValidationServer,DuplicatingaValidationServer",	"expected_result":"true"},{
+	"input_link":"ConfiguringRADIUSValidationServer,DeletingaRADIUSValidationServer",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,TunnelServersOverview",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,AddingaTunnelForwarder",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,ModifyingTunnelValidationServers",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringRADIUSValidationServer,DeletingaTunnelValidationServer",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringAdministrators,ConfiguringVIPAdministrators",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringAdministrators,EditingVIPAdministratorConfiguration",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringAdministrators,ConfiguringVIPAdministratorSynchronizationSettings",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringAdministrators,EditingaVIPAdministratorGroupMapping",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringAdministrators,ManagingtheVIPAdministratorGroupMappingRecords",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringAdministrators,AuthenticatingConsoleAdministratorstoSign",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringIdentityProviders,ConfiguringSelfServicePortalIdP",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringIdentityProviders,ConfiguringVIPManagerIdP",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringLDAPSynchronizationService,ConfigureLDAPDirectorySynchronizationService",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringLDAPSynchronizationService,SimulatingLDAPDirectorySynchronization",
+	"expected_result":"true"
+},{
+	"input_link":"ConfiguringLDAPSynchronizationService,ConfiguringSynchronizationCluster",
+	"expected_result":"true"
+},{
+	"input_link":"UpdateSettings,ConfiguringUpdateSettings",
+	"expected_result":"true"
+},{
+	"input_link":"UpdateSettings,CheckingfortheProductUpdatesintheAutomaticMode",
+	"expected_result":"true"
+},{
+	"input_link":"UpdateSettings,CheckingfortheProductUpdatesintheManualMode",
+	"expected_result":"true"
+},{
+	"input_link":"UpdateSettings,InstallingVIPEnterpriseGatewayUpgradesandPatches",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingLogs,ConfiguringSyslogSettings",
+	"expected_result":"true"
+},{
+	"input_link":"ManagingLogs,ExportingVIPEnterpriseGatewayConfiguration",
+	"expected_result":"true"
+},{
+	"input_link":"ScreenandErrorMessages,Error",
+	"expected_result":"true"
+},{
+	"input_link":"ScreenandErrorMessages,Cross",
+	"expected_result":"true"
+},{
+	"input_link":"ScreenandErrorMessages,Host",
+	"expected_result":"true"
+}]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.symantec.vip.automation.ConfigurationImportTest_kesav">
+        <methods>
+          <include name="Import_Cross_Version_Configuration"/>
+          <include name="initTestSuite"/>
+          <include name="AddVIPCertificate_FirstTime"/>
+          <include name="beforeSuite"/>
+          <include name="SetEnvironment"/>
+          <include name="Cleanup_WebDrivers"/>
+        </methods>
+      </class> <!-- com.symantec.vip.automation.ConfigurationImportTest_kesav -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

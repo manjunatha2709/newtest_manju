@@ -1,0 +1,13 @@
+[{
+	"admin_name":"admin",
+	"admin_password":"password",
+	"expected_result":"true",    "test_scenario":"Console login with admin and password"
+}, {
+	"admin_name":"admin1",
+	"admin_password":"password2",
+	"expected_result":"false",    "test_scenario":"Negative scenario: Console login with admin1 and password2."
+}, {
+	"admin_name":"admin2",
+	"admin_password":"password2",
+	"expected_result":"false",    "test_scenario":"Negative scenario: Console login with admin2 and password2"
+}]
